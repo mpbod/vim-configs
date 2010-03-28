@@ -223,4 +223,16 @@ fun! ShowAvailableSnips()
 	call complete(col, matches)
 	return ''
 endf
+
+fun! ReloadSnippets( snippets_dir, ft )
+    if strlen( a:ft ) == 0
+        let filetype = "_"
+    else
+        let filetype = a:ft
+    endif
+
+    call ResetSnippets()
+    call GetSnippets( a:snippets_dir, filetype )
+endf
+
 " vim:noet:sw=4:ts=4:ft=vim
