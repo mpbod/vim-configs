@@ -1,0 +1,6 @@
+This is my personal VIM configuration.
+The files here goes to ~/.vim directory.
+
+I've also added some more snippets, like:
+* Cucumber snippets.
+* Reload Snippets function to snipMate 0.82.
